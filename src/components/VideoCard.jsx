@@ -1,7 +1,9 @@
 import React from 'react'
 
+
+
 const VideoCard = ({info}) => {
-    // console.log(info)
+     console.log(info)
     const {snippet, statistics}= info;
     const{channelTitle, thumbnails, title}=snippet;
   return (
@@ -10,6 +12,7 @@ const VideoCard = ({info}) => {
         <p className='font-bold'>{title}</p>
         <p className='mt-1'>{channelTitle}</p>
         <p className='mt-1'>{statistics.viewCount} Views</p>
+   
     </div>
   )
 }

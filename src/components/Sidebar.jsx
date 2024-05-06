@@ -11,7 +11,7 @@ const Sidebar = () => {
  const Subscription=['Music', 'Sports', 'Gaming', 'Movies', 'Web Series'];
  const Explore=['Tremding', 'Shopping ','Live ','Film'];
   return (
-    <div className='col-span-1 text-left p-2 top-0 fixed mt-20'>
+    <div className='col-span-1 text-left p-2 top-0 fixed mt-20 bg-white-100'>
         
         <ul>
            { topSidebar.map((item,index)=> <li key={index}>{item}</li>)}

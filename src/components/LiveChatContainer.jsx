@@ -11,7 +11,7 @@ const LiveChatContainer = () => {
   const liveMessages = useSelector((store) => store.chat.messages);
   useEffect(() => {
     const i = setInterval(() => {
-      console.log("api polling is calling");
+      // console.log("api polling is calling");
       dispatch(
         addMessages({
           name: generateNames(),
