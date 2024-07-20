@@ -25,7 +25,7 @@ const LiveChatContainer = () => {
 
   return (
     <>
-      <div className="border border-black mt-14 w-full h-[450px] rounded-lg px-4 bg-slate-100 overflow-y-scroll flex flex-col-reverse">
+      <div className="border border-black mt-14 w-full h-[400px] rounded-lg px-4 bg-slate-100 overflow-y-scroll flex flex-col-reverse">
         {liveMessages.map((message, index) => (
           <LiveMessages
             key={index}

@@ -29,20 +29,26 @@ const Header = () => {
     }
   return (
     <div className="grid grid-flow-col p-2 m-1 shadow-md w-full bg-white fixed z-10">
-      <div className="flex col-span-1">
+      <div className="flex col-span-1 items-center">
+        <div className="ms-4">
         <img
           onClick={()=>handleSidebar()}
-          className="w-8 mr-3 cursor-pointer"
-          src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hamburger_icon.svg/2048px-Hamburger_icon.svg.png"
+          className="w-6 cursor-pointer"
+          src="./list.svg" width={40} 
           alt="menu"
         />
+        </div>
+        <div className="w-[100px]">
         <img
-          className="w-20"
-          src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Logo_of_YouTube_%282015-2017%29.svg/2560px-Logo_of_YouTube_%282015-2017%29.svg.png"
+          className=" me-4 w-[11rem] "
+          
+          src="/youtube.png"
           alt="youtube"
         />
+        </div>
+       
       </div>
-      <div className="col-span-10">
+      <div className="col-span-10 relative text-left">
         <div>
         <input
           className="p-1 px-2 w-1/2 border border-gray-500 rounded-l-full"
@@ -59,16 +65,16 @@ const Header = () => {
         </button>
         </div>
         {showSuggestions && (
-        <div className="absolute left-[25rem]">
-          <ul className="min-w-[55rem]">
-            {suggetions.map((s)=> <li key={s} className="bg-white text-left w-1/2 p-2 hover:bg-gray-300 cursor-pointer">🔍 {s}</li> )}
+        <div className="absolute w-1/2 left-[26%]  -translate-x-1/2">
+          <ul className="min-w-[25rem]">
+            {suggetions.map((s)=> <li key={s} className="bg-white text-left w-full p-2 hover:bg-gray-300 cursor-pointer">🔍 {s}</li> )}
             
           </ul>
         </div>
         )}
       </div>
       <div className="col-span-1">
-        <button>👤</button>
+        <button><img width={40} src="./person-fill.svg"/></button>
       </div>
     </div>
   );

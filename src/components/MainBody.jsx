@@ -6,7 +6,9 @@ import { Outlet } from 'react-router-dom'
 const MainBody = () => {
   return (
     <div className='grid grid-flow-col relative'>
-        <div className='col-span-1' ><Sidebar/></div>
+        <div className='col-span-1' >
+          <Sidebar />
+        </div>
         <Outlet/>
     </div>
   )
